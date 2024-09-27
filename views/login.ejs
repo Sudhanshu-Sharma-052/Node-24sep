@@ -1,0 +1,29 @@
+<%- include('./base/header.ejs') %>
+    <div class="container">
+        <div class="alert bg-success text-center mx-auto mt-2" style="width:40%">
+        <h4 class="text-center" style="color:black">Log in</h4>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <form action="/login" method="post">
+
+                    <div>
+                        <lable class="form-label">Email id</lable>
+                        <input type="email" class="form-control" name="emailId" placeholder="Enter Email id.">
+                    </div>
+                    <div>
+                        <lable class="form-label">Password</lable>
+                        <input type="password" class="form-control" name="password" placeholder="Enter password.">
+                    </div>
+                    <br>
+                    <input type="submit" value="Log in" class="btn btn-info w-100">
+
+                </form>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <%- include('./base/footer.ejs') %>
